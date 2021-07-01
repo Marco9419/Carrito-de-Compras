@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+
+    <!-- fuente de h3 -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="personaliado.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- div de encabezado aqui irá el nombre de la compañoa y el icono del carrito de compras -->
+        <div class = "container">
+            <!-- //div-encabezado -->
+            <div class="row"> 
+                <!-- div-titulo -->
+                <div class="four columns">
+                    <h1 class="titulo"><b>C</b>urseLine</h1>
+                </div>
+
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu" style="list-style-type: none">
+                            <img src="images/carrito.png" class="img-carrito" />
+
+                            <div id="carrito">
+
+                                <table id="lista-carrito" class="u-full-width">
+
+                                    <thead>
+
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody></tbody>
+
+                                </table>
+
+                                <a href="#" id="vaciarCarrito" class="button u-full-width">Vaciar Carrito</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+        <!-- en este div agregaremos una imagen, textos y un input junto con un boton que sera el buscador -->
+        <div class="div-portada">
+
+            <!-- imagen de portada  -->
+            <img src="images/portada.jpg" class="img-portada" />
+
+            <!-- dentro de este div hay 2 textos y el inoput junto con el boton -->
+            <div class="div-search">
+
+                <h2 class="h2">Aprende algo nuevo</h2>
+                <h4 class="h4">Todos los cursos a $95</h4>
+                <input type="text" class="input-text">
+                <!--Input search-->
+                <button type="submit" class="search">
+                    <p class="text-btn">Search</p>
+                </button>
+                <!--Button search-->
+
+            </div>
+
+            <div class="div-informacion">
+
+                <div class="div-cursos">
+
+                    <img src="images/idea.png" class="icon1" />
+                    <p>20,000 Cuersos en linea
+                        Explora los temas más recientes.
+                    </p>
+
+                </div>
+
+                <div class="div-instructores">
+
+                    <img src="images/pizarra.png" class="pizarra" />
+                    <p>Instructores Expertos
+                        Aprende con distintos estilos.
+                    </p>
+
+                </div>
+
+                <div class="div-acceso">
+
+                    <img src="images/reloj.png" class="reloj" />
+                    <p>Acceso de por vida
+                        Aprende a tu ritmo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </nav>
+
+    <!-- div padre el cual contiene a todos los divs de cursos  -->
+    <div class="container-course" id = "cursos">
+
+        <h2 class="text-cursos">Cursos En Linea</h2>
+
+        <!-- div de curso java -->
+        <div class="div-curso1">
+            <img src="images/java.png" class="img-curso1" />
+            <h3> Java para principiantes de 0 a intermedio </h3>
+            <p>Juan Orozco</p>
+            <p class="precio-curso1"><del>$200</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="button-curso1 boton" data-id = "0">Agregar al carrito</a>
+        </div>
+
+        <!-- div de curso js -->
+        <div class="div-curso2-js">
+            <img src="images/javascript.png" class="img-curso2-js" />
+            <h3>JavaScript de 0 a experto, apnrende arrays, json, Api, etc...</h3>
+            <p>Marco Hernández</p>
+            <p class="precio2-js"><del>$300</del< /p>
+                    <p> <span>$95</span></p>
+                    <a href="#" href="#" class="btn-curso2-js boton" data-id="1">Agregar al carrito</a>
+
+        </div>
+
+        <!-- div de curso html -->
+        <div class="div-curso3-html">
+            <img src="images/html.png" class="img-curso3-html" />
+            <h3>Curso HTML completo, aprende todo sobre etiquetas</h3>
+            <p>Carlos Jesús</p>
+            <p class="precio3-html"><del>$250</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-html boton" data-id="2">Agregar al carrito</a>
+
+        </div>
+
+        <!-- div de curso css -->
+        <div class="div-curso-css">
+            <img src="images/css.png" class="img-css" />
+            <h3>Aprende a hacer animaciones con css y a dar estilo a tu html.</h3>
+            <p>Rodrigo Sanchez</p>
+            <p class="precio-css"><del>$220</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-css boton" data-id="3">Agregar al carrito</a>
+
+        </div>
+
+        <!-- div de curso phyton -->
+        <div class="div-curso-phyton">
+            <img src="images/python.png" class="img-phyton" />
+            <h3>Aprende inteligencia artificial con Phyton</h3>
+            <p>Emilio Martinez</p>
+            <p class="precio-phyton"><del>$360</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-phyton boton" data-id="4">Agregar al carrito</a>
+
+        </div>
+
+        <!-- div de curso node js -->
+        <div class="div-curso-node">
+            <img src="images/node-js.png" class="img-node" />
+            <h3>Aprende Node js. desde cero a esperto, oferta limitada.</h3>
+            <p>Angye Esquivel</p>
+            <p class="precio-node"><del>$150</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-node boton" data-id="5">Agregar al carrito</a>
+        </div>
+
+        <!-- div de curso c++ -->
+        <div class="div-curso-cmas">
+            <img src="images/c++.png" class="img-cmas" />
+            <h3>Aprende C++ orientado a objetos, con este increible curso.</h3>
+            <p>Gael Linares</p>
+            <p class="precio-cmas"><del>$200</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-cmas boton" data-id="6">Agregar al carrito</a>
+        </div>
+
+        <!-- div de curso android -->
+        <div class="div-curso-android">
+            <img src="images/android.png" class="img-android" />
+            <h3>Aprende a desarrollar apps moviles con Android studio</h3>
+            <p>Julio Xochimitl</p>
+            <p class="precio-android"><del>$450</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-android boton" data-id="7">Agregar al carrito</a>
+        </div>
+
+        <!-- div de curso de photoshop -->
+        <div class="div-curso-photo">
+            <img src="images/photoshop.jpg" class="img-photo" />
+            <h3>Photoshop de Cero a Experto en edicion de imagenes</h3>
+            <p>Andrea Ferrear</p>
+            <p class="precio-photo"><del>$280</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-photo boton" data-id="8">Agregar al carrito</a>
+        </div>
+
+        <!-- div de curso hacking -->
+        <div class="div-curso-hack">
+            <img src="images/hacker.png" class="img-hack" />
+            <h3>Aprende a hackear redes sociales con ingenieria inversa</h3>
+            <p>Marco Hernández</p>
+            <p class="precio-hack"><del>$200</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-hack boton" data-id="9">Agregar al carrito</a>
+        </div>
+
+        <!-- div de curso english -->
+        <div class="div-curso-english">
+            <img src="images/english.jpg" class="img-english" />
+            <h3>Ingles británico, pronunciación y gramática</h3>
+            <p>Lulú Torres</p>
+            <p class="precio-english"><del>$360</del></p>
+            <p class = "precio">$95</p>
+            <a href="#" class="btn-english boton" data-id="10">Agregar al carrito</a>
+        </div>
+
+        <!-- div de curso redes neuronales -->
+        <div class="div-curso-redNeuronal">
+            <img src="images/red-neuronal.jpg" class="img-redNeuronal" />
+            <h3>Phyton, aprende redes neuronales y conviertete en un experto</h3>
+            <p>Adalberto Jimenez</p>
+            <p class="precio-redNeuronal"><del>$560</del></p>
+            <p> <span>$95</span></p>
+            <a href="#" class="btn-redNeuronal boton" data-id="11">Agregar al carrito</a>
+        </div>
+
+    </div>
+
+    <footer class="footerName">
+        <p class="p-footer">
+            @Marco Hernández
+        </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
